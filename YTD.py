@@ -11,7 +11,7 @@ if n==1:
     print("Video Thubnail Link is\n","=>",youtube_1.thumbnail_url)
     c=int(input("Press 1 to downlaod Video or Press 2 to download the audio and any other to exit..."))
     if c==1:
-        videos=youtube_1.streams.filter(only_video=True)
+        videos=youtube_1.streams.filter('mp4')
         vid=list(enumerate(videos))
         for i in vid:
             print(i)
